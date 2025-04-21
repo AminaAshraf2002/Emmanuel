@@ -1,0 +1,367 @@
+/* ServicesPage.css */
+.services-page {
+  overflow-x: hidden;
+}
+
+/* Page Header */
+.page-header-banner {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(44, 44, 84, 0.8), rgba(156, 39, 176, 0.7));
+  color: white;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumbs a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+  color: white;
+}
+
+.breadcrumbs .separator {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs .active {
+  color: #FFB300;
+}
+
+/* Overview Section */
+.overview-section {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.overview-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overview-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Main Services Section */
+.main-services-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:last-child {
+  margin-bottom: 0;
+}
+
+.service-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-image {
+  flex: 1;
+  height: 400px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.service-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #28286e;
+}
+
+.service-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.service-features {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.service-features li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.service-features li::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #9c27b0;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #28286e, #9c27b0);
+  padding: 80px 0;
+  color: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #FFB300;
+  color: #2a2020;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #9c27b0;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* General Section Styles */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #28286e;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 50px;
+  height: 3px;
+  background: #9c27b0;
+  transform: translateX(-50%);
+}
+
+.section-title p {
+  max-width: 700px;
+  margin: 1rem auto 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .service-image {
+    height: 350px;
+  }
+  
+  .service-content {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+  
+  .service-item,
+  .service-item.reverse {
+    flex-direction: column;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .cta-content h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header-banner {
+    height: 300px;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .overview-content p {
+    font-size: 16px;
+  }
+  
+  .service-content h3 {
+    font-size: 24px;
+  }
+  
+  .service-content {
+    padding: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 24px;
+  }
+  
+  .cta-content p {
+    font-size: 16px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-header-banner {
+    height: 250px;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .service-image {
+    height: 250px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
